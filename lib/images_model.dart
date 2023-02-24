@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 
 class Images {
   final String name;
-  final Image image;
-  final Image name2;
-  final double rating;
-  final double reviews;
-  final int stars;
+  final String image;
+  final String name2;
+  final String rating;
+  final String reviews;
+  final String stars;
   final String description;
 
   const Images({
@@ -32,8 +32,8 @@ class Images {
       );
 }
 
-class GamesApi {
-  static Future<List<Images>> getGamesLocally(BuildContext context) async {
+class ImagesApi {
+  static Future<List<Images>> getImagesLocally(BuildContext context) async {
     final assetBungle = DefaultAssetBundle.of(context);
     final data = await assetBungle.loadString('assets/games.json');
     final body = jsonDecode(data);

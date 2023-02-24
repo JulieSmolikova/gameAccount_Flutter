@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 
 class Games {
   final String name;
-  final Image avatar;
-  final Image poster;
-  final bool connected;
+  final String avatar;
+  final String poster;
+  final String connected;
   final String playing;
-  final bool friends;
+  final String friends;
 
   const Games({
     required this.name,

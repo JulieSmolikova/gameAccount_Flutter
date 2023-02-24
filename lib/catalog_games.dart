@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:game_account/constants.dart';
+import 'package:game_account/images_list_widget.dart';
+import 'package:game_account/painter_circle.dart';
+import 'package:game_account/painter_games.dart';
 import 'package:game_account/posters_list_widget.dart';
 import 'package:game_account/text_field.dart';
 
@@ -11,7 +14,6 @@ class CatalogGames extends StatefulWidget {
 }
 
 class _CatalogGamesState extends State<CatalogGames> {
-
   // int SelectedTab = 0;
   //
   // final List bottomNavIcons = [
@@ -56,12 +58,12 @@ class _CatalogGamesState extends State<CatalogGames> {
                                 offset: const Offset(-10, -10))
                           ]),
                           child: GestureDetector(
-                            onTap: ((){
+                            onTap: (() {
                               setState(() {
-                                Navigator.of(context).pushNamed('/game_account');
+                                Navigator.of(context)
+                                    .pushNamed('/game_account');
                               });
                             }),
-
                             child: ClipOval(
                               child: Container(
                                 width: 52,
@@ -229,7 +231,7 @@ class _CatalogGamesState extends State<CatalogGames> {
                     ),
                   ),
                   Positioned(
-                      top: size.height * 0.26,
+                      top: size.height * 0.25,
                       left: size.width * 0.1,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -251,35 +253,55 @@ class _CatalogGamesState extends State<CatalogGames> {
                                   fontWeight: FontWeight.bold))
                         ],
                       )),
+
                   Positioned(
                     top: size.height * 0.32,
-                    left: size.width * 0.01,
+                    left: size.width * 0.03,
                     child: Container(
-                      width: size.width * 0.98,
+                      width: size.width * 0.94,
                       height: size.height * 0.37,
-                      color: Colors.grey,
+                      color: Colors.transparent,
+                      child: ImagesListWidget()
+                      ),
                     ),
-                  ),
+
+                  // Positioned(
+                  //   top: size.height * 0.32,
+                  //   left: size.width * 0.03,
+                  //   child: Container(
+                  //     width: size.width * 0.94,
+                  //     height: size.height * 0.37,
+                  //     color: Colors.transparent,
+                  //     child: CustomPaint(
+                  //       painter: PainterGames(),
+                  //     ),
+                  //   ),
+                  // ),
+
+                  // Positioned(
+                  //     top: size.height * 0.31,
+                  //     left: size.width * 0.03,
+                  //     child: Container(
+                  //       width: 110,
+                  //       height: 110,
+                  //       decoration: BoxDecoration(
+                  //         color: Colors.transparent,
+                  //         borderRadius: BorderRadius.circular(60)
+                  //       ),
+                  //       child: CustomPaint(
+                  //         painter: PainterCircle(),
+                  //       ),
+                  //     )),
 
                   Positioned(
                       top: size.height * 0.72,
                       left: size.width * 0.01,
-                      child:
-                      // Container(
-                      //   width: size.width,
-                      //   height: size.height * 0.25,
-                      //   color: Colors.grey,
-                      //   child: Center(child: Image.asset('assets/posters/p01.jpg')),
-                      // )
-                    Container(
-                      width: size.width,
-                        //height: size.height * 0.25,
-                        height: 120,
-                        color: Colors.grey,
-                      child: PostersListWidget(),
-                    )
-                  ),
-
+                      child: Container(
+                        width: size.width,
+                        height: size.height * 0.25,
+                        color: Colors.transparent,
+                        child: const PostersListWidget(),
+                      )),
 
                   // BottomNavigationBar(
                   //   currentIndex: SelectedTab,
@@ -293,8 +315,6 @@ class _CatalogGamesState extends State<CatalogGames> {
                   //     onSelectedTab(index);
                   //   },
                   // )
-
-
                 ],
               )),
         ),

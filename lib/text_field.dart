@@ -21,27 +21,44 @@ class TextFieldCustom extends StatelessWidget {
         color: Colors.grey.withOpacity(0.2),
         borderRadius: BorderRadius.circular(10)
       ),
-      child: TextField(
-          style: const TextStyle(color: Colors.white70, fontSize: 20),
-          cursorColor: Colors.white70,
-          textAlign: TextAlign.center,
-          textAlignVertical: TextAlignVertical.center,
-          decoration: InputDecoration(
-              isCollapsed: true,
-              prefixIcon: Center(
-                child: Icon(
-                  Icons.search,
-                  color: Colors.white70.withOpacity(0.5),
-                  size: 25,
+      child: Center(
+        child: TextField(
+            style: const TextStyle(color: Colors.white, fontSize: 20),
+            cursorColor: Colors.white70,
+            textAlign: TextAlign.center,
+            textAlignVertical: TextAlignVertical.center,
+            decoration: InputDecoration(
+                isCollapsed: true,
+                prefixIcon: Center(
+                  child: Icon(
+                    Icons.search,
+                    color: Colors.white70.withOpacity(0.5),
+                    size: 25,
+                  ),
                 ),
-              ),
-              hintText: text,
+                hintText: text,
 
-              hintStyle: TextStyle(
-                  fontSize: 25,
-                  color: Colors.white70.withOpacity(0.6),
-                  letterSpacing: 7),
-          )),
+                hintStyle: TextStyle(
+                    fontSize: 25,
+                    color: Colors.white70.withOpacity(0.6),
+                    letterSpacing: 7),
+
+                // focusedBorder: OutlineInputBorder(
+                //   borderSide: BorderSide(
+                //       color:
+                //       Colors.grey.withOpacity(0.2),
+                //       width: 2.0),
+                //   borderRadius: BorderRadius.circular(10),
+                // ),
+                // enabledBorder: OutlineInputBorder(
+                //   borderRadius: BorderRadius.circular(10),
+                //   borderSide: BorderSide(
+                //       color:
+                //       Colors.grey.withOpacity(0.2),
+                //       width: 2.0),)
+
+            )),
+      ),
     );
   }
 }
