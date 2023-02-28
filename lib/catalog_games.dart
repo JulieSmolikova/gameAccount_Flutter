@@ -95,6 +95,7 @@ class _CatalogGamesState extends State<CatalogGames> {
                           text: '',
                           sizeH: 45,
                           sizeW: 60,
+                          sizeW1: 150,
                         ),
                       ],
                     ),
@@ -255,43 +256,15 @@ class _CatalogGamesState extends State<CatalogGames> {
                       )),
 
                   Positioned(
-                    top: size.height * 0.32,
-                    left: size.width * 0.03,
+                    top: size.height * 0.29,
+                    left: size.width * 0.02,
                     child: Container(
-                      width: size.width * 0.94,
-                      height: size.height * 0.37,
+                        width: size.width * 0.96,
+                        height: size.height * 0.4,
                       color: Colors.transparent,
                       child: ImagesListWidget()
                       ),
                     ),
-
-                  // Positioned(
-                  //   top: size.height * 0.32,
-                  //   left: size.width * 0.03,
-                  //   child: Container(
-                  //     width: size.width * 0.94,
-                  //     height: size.height * 0.37,
-                  //     color: Colors.transparent,
-                  //     child: CustomPaint(
-                  //       painter: PainterGames(),
-                  //     ),
-                  //   ),
-                  // ),
-
-                  // Positioned(
-                  //     top: size.height * 0.31,
-                  //     left: size.width * 0.03,
-                  //     child: Container(
-                  //       width: 110,
-                  //       height: 110,
-                  //       decoration: BoxDecoration(
-                  //         color: Colors.transparent,
-                  //         borderRadius: BorderRadius.circular(60)
-                  //       ),
-                  //       child: CustomPaint(
-                  //         painter: PainterCircle(),
-                  //       ),
-                  //     )),
 
                   Positioned(
                       top: size.height * 0.72,

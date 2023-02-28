@@ -35,7 +35,7 @@ class Images {
 class ImagesApi {
   static Future<List<Images>> getImagesLocally(BuildContext context) async {
     final assetBungle = DefaultAssetBundle.of(context);
-    final data = await assetBungle.loadString('assets/games.json');
+    final data = await assetBungle.loadString('assets/images.json');
     final body = jsonDecode(data);
     return body.map<Images>(Images.fromJson).toList();
   }
