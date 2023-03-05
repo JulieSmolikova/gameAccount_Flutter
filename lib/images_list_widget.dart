@@ -61,7 +61,7 @@ Widget buildImages(List<Images> images) => ListView.builder(
                 child: SizedBox(
                   width: 100,
                   height: 100,
-                  child: Text('${image.rating}', style: TextStyle(color: Colors.white.withOpacity(0.9), fontStyle: FontStyle.italic, fontSize: 32, fontFamily: 'Orbitron', ),),
+                  child: Text(image.rating, style: TextStyle(color: Colors.white.withOpacity(0.9), fontStyle: FontStyle.italic, fontSize: 32, fontFamily: 'Orbitron', ),),
                 ),
               ),
 
@@ -139,12 +139,12 @@ Widget buildImages(List<Images> images) => ListView.builder(
                   children: [
                     SizedBox(
                       width: size.width,
-                      child: Text('${image.name}', style: const TextStyle(fontSize: 35, color: Colors.white, fontFamily: 'Orbitron', fontWeight: FontWeight.bold ),),),
+                      child: Text(image.name, style: const TextStyle(fontSize: 35, color: Colors.white, fontFamily: 'Orbitron', fontWeight: FontWeight.bold ),),),
                     const SizedBox(height: 5,),
                     SizedBox(
                       width: size.width * 0.87,
                       height: 44,
-                      child: SingleChildScrollView(child: Text('${image.description}', style: const TextStyle(fontSize: 13, color: Colors.white),)),),
+                      child: SingleChildScrollView(child: Text(image.description, style: const TextStyle(fontSize: 13, color: Colors.white),)),),
                     const SizedBox(height: 7,),
                     SizedBox(
                       width: size.width,
@@ -163,13 +163,13 @@ Widget buildImages(List<Images> images) => ListView.builder(
                   bottom: size.height * 0.03,
                   right: size.width * 0.1,
                   child: Row(
-                      children: [
+                      children: const [
                       ContainerBtn(
                         sizeW: 130,
                         sizeH: 30,
                         child: Center(child: Text('Get it now!', style: style1,)),),
-                      const SizedBox(width: 7,),
-                      const ContainerBtn(
+                      SizedBox(width: 7,),
+                      ContainerBtn(
                         sizeW: 30,
                         sizeH: 30,
                         child: Center(child: Text('+', style: TextStyle(fontSize: 14, color: Colors.white, fontWeight: FontWeight.bold)))),

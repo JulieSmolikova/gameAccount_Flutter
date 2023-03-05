@@ -14,18 +14,6 @@ class CatalogGames extends StatefulWidget {
 }
 
 class _CatalogGamesState extends State<CatalogGames> {
-  // int SelectedTab = 0;
-  //
-  // final List bottomNavIcons = [
-  //   'diamond.png', 'download.png', 'menu.png', 'nut.png', 'trolley.png'
-  // ];
-  //
-  // void onSelectedTab(int index) {
-  //   if (SelectedTab == index) return;
-  //   setState(() {
-  //     SelectedTab = index;
-  //   });
-  // }
 
   @override
   Widget build(BuildContext context) {
