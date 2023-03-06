@@ -20,8 +20,7 @@ class Images {
     required this.description,
   });
 
-  static Images fromJson(json) =>
-      Images(
+  static Images fromJson(json) => Images(
         name: json['name'],
         image: json['image'],
         name2: json['name2'],

@@ -98,10 +98,7 @@ Widget buildGames(List<Games> games) => ListView.builder(
                     const SizedBox(
                       height: 3,
                     ),
-                    Text(
-                        game.connected == 'true'
-                            ? 'Connected'
-                            : 'Offline',
+                    Text(game.connected == 'true' ? 'Connected' : 'Offline',
                         style: TextStyle(
                             fontSize: 12,
                             color: Colors.white.withOpacity(0.8),
@@ -144,7 +141,7 @@ Widget buildGames(List<Games> games) => ListView.builder(
                 left: size.width * 0.845,
                 child: Column(
                   children: [
-                    Container(
+                    SizedBox(
                       child: Icon(
                         Icons.circle,
                         size: 6,
@@ -154,7 +151,7 @@ Widget buildGames(List<Games> games) => ListView.builder(
                     const SizedBox(
                       height: 2,
                     ),
-                    Container(
+                    SizedBox(
                       child: Icon(
                         Icons.circle,
                         size: 6,

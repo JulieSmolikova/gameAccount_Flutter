@@ -52,13 +52,14 @@ class _TextFieldCustomState extends State<TextFieldCustom> {
               borderRadius: BorderRadius.circular(10)),
           child: Center(
               child: TextField(
-                style: const TextStyle(color: Colors.white, fontSize: 20),
-                cursorColor: Colors.white70,
-                textAlign: TextAlign.start,
-                textAlignVertical: TextAlignVertical.center,
-                decoration: InputDecoration(
+            style: const TextStyle(color: Colors.white, fontSize: 20),
+            cursorColor: Colors.white70,
+            textAlign: TextAlign.start,
+            textAlignVertical: TextAlignVertical.center,
+            decoration: InputDecoration(
                 isCollapsed: true,
-                prefixIcon: Icon(Icons.search,
+                prefixIcon: Icon(
+                  Icons.search,
                   color: Colors.white70.withOpacity(0.5),
                   size: 25,
                 ),
@@ -67,9 +68,9 @@ class _TextFieldCustomState extends State<TextFieldCustom> {
                     fontSize: 25,
                     color: Colors.white70.withOpacity(0.6),
                     letterSpacing: 7)),
-                onSubmitted: (val) {
-                Switched();
-              },
+            onSubmitted: (val) {
+              Switched();
+            },
           ))),
       crossFadeState:
           isSwitched ? CrossFadeState.showFirst : CrossFadeState.showSecond,

@@ -17,46 +17,31 @@ class PainterAccount extends CustomPainter {
 
     pathBox.lineTo(0, size.height * 0.80);
 
-    pathBox.cubicTo(
-        0, size.height,
-        size.width * 0.07, size.height,
+    pathBox.cubicTo(0, size.height, size.width * 0.07, size.height,
         size.width * 0.1, size.height);
 
     pathBox.lineTo(size.width * 0.9, size.height);
 
-    pathBox.cubicTo(
-        size.width * 0.93, size.height,
-        size.width, size.height,
+    pathBox.cubicTo(size.width * 0.93, size.height, size.width, size.height,
         size.width, size.height * 0.8);
 
     pathBox.lineTo(size.width, size.height * 0.2);
 
-    pathBox.cubicTo(
-        size.width, 0,
-        size.width * 0.93, 0,
-        size.width * 0.9, 0);
+    pathBox.cubicTo(size.width, 0, size.width * 0.93, 0, size.width * 0.9, 0);
 
     pathBox.lineTo(size.width * 0.32, 0);
 
-    pathBox.cubicTo(
-        size.width * 0.25, 0,
-        size.width * 0.25, size.height * 0.22,
+    pathBox.cubicTo(size.width * 0.25, 0, size.width * 0.25, size.height * 0.22,
         size.width * 0.245, size.height * 0.254);
 
-    pathBox.cubicTo(
-        size.width * 0.241, size.height * 0.254,
-        size.width * 0.27, size.height * 0.81,
-        size.width * 0.09, size.height * 0.81);
+    pathBox.cubicTo(size.width * 0.241, size.height * 0.254, size.width * 0.27,
+        size.height * 0.81, size.width * 0.09, size.height * 0.81);
 
-    pathBox.cubicTo(
-        size.width * 0.03, size.height * 0.78,
-        size.width * 0.03, size.height * 0.7,
-        size.width * 0.045, size.height * 0.77);
+    pathBox.cubicTo(size.width * 0.03, size.height * 0.78, size.width * 0.03,
+        size.height * 0.7, size.width * 0.045, size.height * 0.77);
 
-    pathBox.cubicTo(
-        size.width * 0.01, size.height * 0.67,
-        size.width * 0.01, size.height * 0.7,
-        0, size.height * 0.75);
+    pathBox.cubicTo(size.width * 0.01, size.height * 0.67, size.width * 0.01,
+        size.height * 0.7, 0, size.height * 0.75);
 
     canvas.drawPath(pathBox, paintBox);
 
@@ -69,8 +54,6 @@ class PainterAccount extends CustomPainter {
           stops: const [
             0.0,
             0.15,
-            // 0.4,
-            // 0.8
             0.4,
             0.8
           ],
@@ -88,46 +71,31 @@ class PainterAccount extends CustomPainter {
 
     path.lineTo(0, size.height * 0.80);
 
-    path.cubicTo(
-        0, size.height,
-        size.width * 0.07, size.height,
+    path.cubicTo(0, size.height, size.width * 0.07, size.height,
         size.width * 0.1, size.height);
 
     path.lineTo(size.width * 0.9, size.height);
 
-    path.cubicTo(
-        size.width * 0.93, size.height,
-        size.width, size.height,
+    path.cubicTo(size.width * 0.93, size.height, size.width, size.height,
         size.width, size.height * 0.8);
 
     path.lineTo(size.width, size.height * 0.2);
 
-    path.cubicTo(
-        size.width, 0,
-        size.width * 0.93, 0,
-        size.width * 0.9, 0);
+    path.cubicTo(size.width, 0, size.width * 0.93, 0, size.width * 0.9, 0);
 
     path.lineTo(size.width * 0.32, 0);
 
-    path.cubicTo(
-        size.width * 0.25, 0,
-        size.width * 0.25, size.height * 0.22,
+    path.cubicTo(size.width * 0.25, 0, size.width * 0.25, size.height * 0.22,
         size.width * 0.245, size.height * 0.254);
 
-    path.cubicTo(
-        size.width * 0.241, size.height * 0.254,
-        size.width * 0.27, size.height * 0.81,
-        size.width * 0.09, size.height * 0.81);
+    path.cubicTo(size.width * 0.241, size.height * 0.254, size.width * 0.27,
+        size.height * 0.81, size.width * 0.09, size.height * 0.81);
 
-    path.cubicTo(
-        size.width * 0.03, size.height * 0.78,
-        size.width * 0.03, size.height * 0.7,
-        size.width * 0.045, size.height * 0.77);
+    path.cubicTo(size.width * 0.03, size.height * 0.78, size.width * 0.03,
+        size.height * 0.7, size.width * 0.045, size.height * 0.77);
 
-    path.cubicTo(
-        size.width * 0.01, size.height * 0.67,
-        size.width * 0.01, size.height * 0.7,
-        0, size.height * 0.75);
+    path.cubicTo(size.width * 0.01, size.height * 0.67, size.width * 0.01,
+        size.height * 0.7, 0, size.height * 0.75);
 
     canvas.drawPath(path, paint);
   }

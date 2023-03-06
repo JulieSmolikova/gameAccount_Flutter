@@ -47,9 +47,8 @@ class _GameAccountState extends State<GameAccount> {
                               BoxShadow(
                                   color: Colors.deepOrange,
                                   blurRadius: 200,
-                                  offset: Offset(0, 0)
-                              )]
-                        ),
+                                  offset: Offset(0, 0))
+                            ]),
                       )),
                   Positioned(
                       bottom: 0,
@@ -63,9 +62,8 @@ class _GameAccountState extends State<GameAccount> {
                               BoxShadow(
                                   color: Colors.deepOrange,
                                   blurRadius: 200,
-                                  offset: Offset(0, 0)
-                              )]
-                        ),
+                                  offset: Offset(0, 0))
+                            ]),
                       )),
                   Positioned(
                       bottom: 110,
@@ -79,9 +77,8 @@ class _GameAccountState extends State<GameAccount> {
                               BoxShadow(
                                   color: Colors.green.withOpacity(0.9),
                                   blurRadius: 200,
-                                  offset: const Offset(0, 0)
-                              )]
-                        ),
+                                  offset: const Offset(0, 0))
+                            ]),
                       )),
                   Positioned(
                       top: size.height * 0.27,
@@ -95,9 +92,8 @@ class _GameAccountState extends State<GameAccount> {
                               BoxShadow(
                                   color: Colors.yellow,
                                   blurRadius: 30,
-                                  offset: Offset(0, 0)
-                              )]
-                        ),
+                                  offset: Offset(0, 0))
+                            ]),
                       )),
                   Positioned(
                       top: 50,
@@ -111,9 +107,8 @@ class _GameAccountState extends State<GameAccount> {
                               BoxShadow(
                                   color: Colors.white,
                                   blurRadius: 20,
-                                  offset: Offset(0, 0)
-                              )]
-                        ),
+                                  offset: Offset(0, 0))
+                            ]),
                       )),
                   Positioned(
                       top: size.height * 0.31,
@@ -127,9 +122,8 @@ class _GameAccountState extends State<GameAccount> {
                               BoxShadow(
                                   color: Colors.purpleAccent,
                                   blurRadius: 150,
-                                  offset: Offset(0, 0)
-                              )]
-                        ),
+                                  offset: Offset(0, 0))
+                            ]),
                       )),
                   Positioned(
                       top: size.height * 0.215,
@@ -143,9 +137,8 @@ class _GameAccountState extends State<GameAccount> {
                               BoxShadow(
                                   color: Colors.white,
                                   blurRadius: 150,
-                                  offset: Offset(0, 0)
-                              )]
-                        ),
+                                  offset: Offset(0, 0))
+                            ]),
                       )),
                   Positioned(
                       top: size.height * 0.07,
@@ -159,9 +152,8 @@ class _GameAccountState extends State<GameAccount> {
                               BoxShadow(
                                   color: Colors.blue.shade200,
                                   blurRadius: 200,
-                                  offset: const Offset(0, 0)
-                              )]
-                        ),
+                                  offset: const Offset(0, 0))
+                            ]),
                       )),
                   Positioned(
                       top: size.height * 0.07,
@@ -175,9 +167,8 @@ class _GameAccountState extends State<GameAccount> {
                               BoxShadow(
                                   color: Colors.purpleAccent,
                                   blurRadius: 200,
-                                  offset: Offset(0, 0)
-                              )]
-                        ),
+                                  offset: Offset(0, 0))
+                            ]),
                       )),
                   Positioned(
                     top: 15,
@@ -290,12 +281,12 @@ class _GameAccountState extends State<GameAccount> {
                             borderRadius: BorderRadius.circular(10)),
                         child: Center(
                             child: TextField(
-                              style: const TextStyle(
-                                  color: Colors.white, fontSize: 20),
-                              cursorColor: Colors.white70,
-                              textAlign: TextAlign.start,
-                              textAlignVertical: TextAlignVertical.center,
-                              decoration: InputDecoration(
+                          style: const TextStyle(
+                              color: Colors.white, fontSize: 20),
+                          cursorColor: Colors.white70,
+                          textAlign: TextAlign.start,
+                          textAlignVertical: TextAlignVertical.center,
+                          decoration: InputDecoration(
                               isCollapsed: true,
                               prefixIcon: Icon(
                                 Icons.search,
@@ -312,13 +303,14 @@ class _GameAccountState extends State<GameAccount> {
                   ),
                   Positioned(
                     top: size.height * 0.45,
-                      left: size.width * 0.05,
-                        child: Container(
-                          width: size.width,
-                          height: size.height * 0.5,
-                          color: Colors.transparent,
-                          child: GamesListWidget(),
-                        ),)
+                    left: size.width * 0.05,
+                    child: Container(
+                      width: size.width,
+                      height: size.height * 0.5,
+                      color: Colors.transparent,
+                      child: const GamesListWidget(),
+                    ),
+                  )
                 ],
               ),
             )),

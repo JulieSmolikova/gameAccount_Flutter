@@ -18,15 +18,14 @@ class Games {
     required this.friends,
   });
 
-  static Games fromJson(json) =>
-     Games(
-       name: json['name'],
-       avatar: json['avatar'],
-       poster: json['poster'],
-       connected: json['connected'],
-       playing: json['playing'],
-       friends: json['friends'],
-     );
+  static Games fromJson(json) => Games(
+        name: json['name'],
+        avatar: json['avatar'],
+        poster: json['poster'],
+        connected: json['connected'],
+        playing: json['playing'],
+        friends: json['friends'],
+      );
 }
 
 class GamesApi {

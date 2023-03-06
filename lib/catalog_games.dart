@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:game_account/constants.dart';
+import 'package:game_account/curved_nav_bar.dart';
 import 'package:game_account/images_list_widget.dart';
 import 'package:game_account/painter_circle.dart';
 import 'package:game_account/painter_games.dart';
@@ -14,7 +15,6 @@ class CatalogGames extends StatefulWidget {
 }
 
 class _CatalogGamesState extends State<CatalogGames> {
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -88,6 +88,21 @@ class _CatalogGamesState extends State<CatalogGames> {
                       ],
                     ),
                   ),
+                  Positioned(
+                      top: 50,
+                      left: 60,
+                      child: Container(
+                        height: 22,
+                        width: 22,
+                        decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(50)),
+                        child: const Center(
+                            child: Text(
+                          '10',
+                          style: style1,
+                        )),
+                      )),
                   Positioned(
                     top: size.height * 0.13,
                     child: Column(
@@ -242,18 +257,15 @@ class _CatalogGamesState extends State<CatalogGames> {
                                   fontWeight: FontWeight.bold))
                         ],
                       )),
-
                   Positioned(
                     top: size.height * 0.29,
                     left: size.width * 0.02,
                     child: Container(
                         width: size.width * 0.96,
                         height: size.height * 0.4,
-                      color: Colors.transparent,
-                      child: ImagesListWidget()
-                      ),
-                    ),
-
+                        color: Colors.transparent,
+                        child: const ImagesListWidget()),
+                  ),
                   Positioned(
                       top: size.height * 0.72,
                       left: size.width * 0.01,
@@ -263,19 +275,13 @@ class _CatalogGamesState extends State<CatalogGames> {
                         color: Colors.transparent,
                         child: const PostersListWidget(),
                       )),
-
-                  // BottomNavigationBar(
-                  //   currentIndex: SelectedTab,
-                  //   items: [
-                  //     BottomNavigationBarItem(icon: Image.asset('assets/icons/diamond.png')),
-                  //     BottomNavigationBarItem(icon: Image.asset('assets/icons/diamond.png')),
-                  //     BottomNavigationBarItem(icon: Image.asset('assets/icons/diamond.png')),
-                  //     BottomNavigationBarItem(icon: Image.asset('assets/icons/diamond.png')),
-                  //     BottomNavigationBarItem(icon: Image.asset('assets/icons/diamond.png'))
-                  //   onTap: (index) {
-                  //     onSelectedTab(index);
-                  //   },
-                  // )
+                  Positioned(
+                      bottom: 0,
+                      left: 0,
+                      child: SizedBox(
+                          height: 60,
+                          width: size.width,
+                          child: const BottomNavBar())),
                 ],
               )),
         ),
