@@ -19,6 +19,7 @@ class _GameAccountState extends State<GameAccount> {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
+            resizeToAvoidBottomInset: true,
             backgroundColor: Kbkgr,
             body: Container(
               width: size.width,
@@ -219,7 +220,7 @@ class _GameAccountState extends State<GameAccount> {
                           const SizedBox(
                             height: 7,
                           ),
-                          const Text('Offriginal', style: style3)
+                          const Text('Smolikova', style: style3)
                         ],
                       )),
                   Positioned(

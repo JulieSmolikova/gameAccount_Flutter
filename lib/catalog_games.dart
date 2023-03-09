@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:game_account/constants.dart';
 import 'package:game_account/curved_nav_bar.dart';
@@ -23,6 +24,7 @@ class _CatalogGamesState extends State<CatalogGames> {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
+          resizeToAvoidBottomInset: true,
           backgroundColor: Kbkgr,
           body: Container(
               width: size.width,
