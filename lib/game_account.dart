@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:game_account/constants.dart';
 import 'package:game_account/games_list_widget.dart';
+import 'package:game_account/glow_box.dart';
 import 'package:game_account/painter_circle.dart';
 
 class GameAccount extends StatefulWidget {
@@ -39,138 +40,83 @@ class _GameAccountState extends State<GameAccount> {
                   Positioned(
                       top: size.height * 0.4,
                       right: size.width * 0.1,
-                      child: Container(
-                        width: 60,
-                        height: 60,
-                        decoration: const BoxDecoration(
-                            color: Colors.transparent,
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.deepOrange,
-                                  blurRadius: 200,
-                                  offset: Offset(0, 0))
-                            ]),
-                      )),
+                      child: const GlowBox(
+                          width: 60,
+                          height: 60,
+                          colorBox: Colors.deepOrange,
+                          blurRadius: 200)
+                      //const GlowBox(width: 60, height: 60, colorBox: Colors.deepOrange, blurRadius: 200),
+                      ),
                   Positioned(
                       bottom: 0,
                       left: size.width * 0.1,
-                      child: Container(
-                        width: 80,
-                        height: 70,
-                        decoration: const BoxDecoration(
-                            color: Colors.transparent,
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.deepOrange,
-                                  blurRadius: 200,
-                                  offset: Offset(0, 0))
-                            ]),
-                      )),
+                      child: const GlowBox(
+                          width: 80,
+                          height: 70,
+                          colorBox: Colors.deepOrange,
+                          blurRadius: 200)
+                      //const GlowBox(width: 80, height: 70, colorBox: Colors.deepOrange, blurRadius: 200),
+                      ),
                   Positioned(
                       bottom: 110,
                       right: 10,
-                      child: Container(
-                        width: 80,
-                        height: 100,
-                        decoration: BoxDecoration(
-                            color: Colors.transparent,
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.green.withOpacity(0.9),
-                                  blurRadius: 200,
-                                  offset: const Offset(0, 0))
-                            ]),
-                      )),
+                      child: GlowBox(
+                          width: 80,
+                          height: 100,
+                          colorBox: Colors.green.withOpacity(0.9),
+                          blurRadius: 200)
+                      //GlowBox(width: 80, height: 100, colorBox: Colors.green.withOpacity(0.9), blurRadius: 200),
+                      ),
                   Positioned(
                       top: size.height * 0.27,
                       left: size.width * 0.57,
-                      child: Container(
-                        width: 20,
-                        height: 20,
-                        decoration: const BoxDecoration(
-                            color: Colors.transparent,
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.yellow,
-                                  blurRadius: 30,
-                                  offset: Offset(0, 0))
-                            ]),
-                      )),
+                      child: const GlowBox(
+                          width: 20,
+                          height: 20,
+                          colorBox: Colors.yellow,
+                          blurRadius: 30)
+                      //const GlowBox(width: 20, height: 20, colorBox: Colors.yellow, blurRadius: 30),
+                      ),
                   Positioned(
                       top: 50,
                       left: size.width * 0.64,
-                      child: Container(
-                        width: 15,
-                        height: 15,
-                        decoration: const BoxDecoration(
-                            color: Colors.transparent,
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.white,
-                                  blurRadius: 20,
-                                  offset: Offset(0, 0))
-                            ]),
-                      )),
+                      child: const GlowBox(
+                          width: 15,
+                          height: 15,
+                          colorBox: Colors.white,
+                          blurRadius: 20)),
                   Positioned(
                       top: size.height * 0.31,
                       left: 0,
-                      child: Container(
-                        width: 100,
-                        height: 30,
-                        decoration: const BoxDecoration(
-                            color: Colors.transparent,
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.purpleAccent,
-                                  blurRadius: 150,
-                                  offset: Offset(0, 0))
-                            ]),
-                      )),
+                      child: const GlowBox(
+                          width: 100,
+                          height: 30,
+                          colorBox: Colors.purpleAccent,
+                          blurRadius: 150)),
                   Positioned(
                       top: size.height * 0.215,
                       left: -30,
-                      child: Container(
-                        width: 110,
-                        height: 20,
-                        decoration: const BoxDecoration(
-                            color: Colors.transparent,
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.white,
-                                  blurRadius: 150,
-                                  offset: Offset(0, 0))
-                            ]),
-                      )),
+                      child: const GlowBox(
+                          width: 110,
+                          height: 20,
+                          colorBox: Colors.white,
+                          blurRadius: 150)),
                   Positioned(
                       top: size.height * 0.07,
                       left: 175,
-                      child: Container(
-                        width: 70,
-                        height: 70,
-                        decoration: BoxDecoration(
-                            color: Colors.transparent,
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.blue.shade200,
-                                  blurRadius: 200,
-                                  offset: const Offset(0, 0))
-                            ]),
-                      )),
+                      child: GlowBox(
+                          width: 70,
+                          height: 70,
+                          colorBox: Colors.blue.shade200,
+                          blurRadius: 200)),
                   Positioned(
                       top: size.height * 0.07,
                       left: 145,
-                      child: Container(
-                        width: 60,
-                        height: 60,
-                        decoration: const BoxDecoration(
-                            color: Colors.transparent,
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.purpleAccent,
-                                  blurRadius: 200,
-                                  offset: Offset(0, 0))
-                            ]),
-                      )),
+                      child: const GlowBox(
+                          width: 60,
+                          height: 60,
+                          colorBox: Colors.purpleAccent,
+                          blurRadius: 200)),
                   Positioned(
                     top: 15,
                     left: 15,
@@ -294,7 +240,7 @@ class _GameAccountState extends State<GameAccount> {
                                 color: Colors.white70.withOpacity(0.5),
                                 size: 25,
                               ),
-                              hintText: 'Seartch or add friends',
+                              hintText: 'Search or add friends',
                               hintStyle: TextStyle(
                                   fontSize: 12,
                                   fontStyle: FontStyle.italic,

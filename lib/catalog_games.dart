@@ -7,6 +7,7 @@ import 'package:game_account/painter_circle.dart';
 import 'package:game_account/painter_games.dart';
 import 'package:game_account/posters_list_widget.dart';
 import 'package:game_account/text_field.dart';
+import 'package:game_account/poster_box.dart';
 
 class CatalogGames extends StatefulWidget {
   const CatalogGames({Key? key}) : super(key: key);
@@ -113,67 +114,18 @@ class _CatalogGamesState extends State<CatalogGames> {
                         Row(
                           children: [
                             SizedBox(
-                              width: size.width * 0.12,
+                              width: size.width * 0.105,
                             ),
-                            Container(
-                              width: size.width * 0.16,
-                              height: size.height * 0.062,
-                              clipBehavior: Clip.hardEdge,
-                              decoration: BoxDecoration(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  borderRadius: BorderRadius.circular(10)),
-                              child: Image.asset(
-                                'assets/posters/p06.jpg',
-                                fit: BoxFit.cover,
-                              ),
+                            const PosterBox(poster:'assets/posters/p06.jpg',
+                            ),
+                            const PosterBox(poster:'assets/posters/p16.jpg',
+                            ),
+                            const PosterBox(poster:'assets/posters/p03.jpg',
+                            ),
+                            const PosterBox(poster:'assets/posters/p08.jpg',
                             ),
                             SizedBox(
-                              width: size.width * 0.03,
-                            ),
-                            Container(
-                              width: size.width * 0.16,
-                              height: size.height * 0.062,
-                              clipBehavior: Clip.hardEdge,
-                              decoration: BoxDecoration(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  borderRadius: BorderRadius.circular(10)),
-                              child: Image.asset(
-                                'assets/posters/p16.jpg',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            SizedBox(
-                              width: size.width * 0.03,
-                            ),
-                            Container(
-                              width: size.width * 0.16,
-                              height: size.height * 0.062,
-                              clipBehavior: Clip.hardEdge,
-                              decoration: BoxDecoration(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  borderRadius: BorderRadius.circular(10)),
-                              child: Image.asset(
-                                'assets/posters/p03.jpg',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            SizedBox(
-                              width: size.width * 0.03,
-                            ),
-                            Container(
-                              width: size.width * 0.16,
-                              height: size.height * 0.062,
-                              clipBehavior: Clip.hardEdge,
-                              decoration: BoxDecoration(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  borderRadius: BorderRadius.circular(10)),
-                              child: Image.asset(
-                                'assets/posters/p08.jpg',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            SizedBox(
-                              width: size.width * 0.12,
+                              width: size.width * 0.105,
                             ),
                           ],
                         ),
