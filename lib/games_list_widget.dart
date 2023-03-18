@@ -101,7 +101,9 @@ Widget buildGames(List<Games> games) => ListView.builder(
                     Text(game.connected == 'true' ? 'Connected' : 'Offline',
                         style: TextStyle(
                             fontSize: 12,
-                            color: Colors.white.withOpacity(0.8),
+                            color: (game.connected == 'true'
+                                ? Colors.white.withOpacity(0.8)
+                                : Colors.red.shade800.withOpacity(0.8)),
                             fontStyle: FontStyle.italic)),
                     const SizedBox(
                       height: 7,
@@ -126,16 +128,15 @@ Widget buildGames(List<Games> games) => ListView.builder(
                 top: 15,
                 right: 70,
                 child: Container(
-                  width: 60,
-                  height: 65,
-                  clipBehavior: Clip.hardEdge,
-                  decoration:
-                      BoxDecoration(borderRadius: BorderRadius.circular(10)),
-                  child: Image.asset(
-                    'assets/posters/${game.poster}.jpg',
-                    fit: BoxFit.fill,
-                  ),
-                )),
+                    width: 60,
+                    height: 65,
+                    clipBehavior: Clip.hardEdge,
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                    child: game.connected == 'true'
+                        ? Image.asset('assets/posters/${game.poster}.jpg',
+                            fit: BoxFit.fill)
+                        : null)),
             Positioned(
                 top: 15,
                 left: size.width * 0.845,
